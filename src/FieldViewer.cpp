@@ -288,7 +288,7 @@ void Viewer::stepLogo()
 
 		// load viewPoint file transformation.
 		std::string dirstr( getResourceDir() + "/views");
-		IO::StandardDirectory dir(dirstr);
+		IO::StandardDirectory dir(dirstr.c_str());
 		std::string resource = "logo.view";
 		loadViewpointFile(dir, resource.c_str());
 
