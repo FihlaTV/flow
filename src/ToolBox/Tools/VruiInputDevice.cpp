@@ -48,7 +48,7 @@ VruiInputDevice::VruiInputDevice ( ToolBox * toolBox, const std::string & name )
 		                    0,       // number of valuators
 		                    true ) ; // act like a physical device
 	mVruiInputDevice -> setTransformation ( toolBox -> deviceTransformation ( ) ) ;
-	mVruiInputDevice -> setDeviceRayDirection ( Vrui::Vector ( 0.0, 1.0, 0.0 ) ) ;
+	mVruiInputDevice -> setDeviceRay ( Vrui::Vector ( 0.0, 1.0, 0.0 ), Vrui::Scalar(0) );
 }
 
 VruiInputDevice::~VruiInputDevice ( )
